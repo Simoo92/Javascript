@@ -52,7 +52,7 @@ var totaleIvato = total + iva;
 
 console.log(totaleIvato + " €");
 
-elTotaleIvato.innerHTML = "<h2> totale con iva: " + totaleIvato + " € <h2>";
+elTotaleIvato.innerHTML = "<h2> totale con iva: " + totaleIvato + " € </h2>";
 
 
 
@@ -61,7 +61,7 @@ var spedizione = 30;
 console.log(spedizione + " €");
 
 
-elSpedizione.innerHTML = "<h2> spedizione: " + spedizione + " € <h2>";
+elSpedizione.innerHTML = "<h2> spedizione: " + spedizione + " € </h2>";
 
 
 
