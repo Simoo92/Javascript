@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+<p id="uno">ciao</p>
+
+<ul>
+    <li id="one"class="blue">Frutta</li>
+    <li id="two"class="blue">Verdura</li>
+    <li id="three"class="blue">Birra</li>
+    <li id="four"class="blue">Pizza</li>
+</ul>
+
+<script>
+    //GET ELEMENT BY ID
+    var uno = document.getElementById('uno');
+    console.log(typeof uno);
+    console.log(uno.innerHTMLlog);
+    console.log(uno.innerText);
+    console.log(uno.textContent);
+    uno.className = 'red';
+    uno.textContent = "Ciao questa è la tua spesa ";
+    
+    //GET ELEMENTS BY TAG NAME
+
+    var elsLi = document.getElementsByTagName('li');
+    console.log(elsLi);
+
+    for(var i=0; i<elsLi.length; i++){
+        elsLi[i].className = 'red';
+    }
+
+    //GET ELEMENTS BY CLASS NAME
+    // var elsLi = document.getElementsByClassName('blue');
+    // console.log(elsLi);
+
+    // for(var i=0; i < elsLi.length; i++){
+    //     console.log(elsLi);
+
+    //     elsLi[i].className = 'red';
+    // }
+
+
+</script>    
+</body>
+</html>

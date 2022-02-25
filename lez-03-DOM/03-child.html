@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <h2>Cose da comprare</h2>
+<ul>
+    <li id="one"class="blue">Frutta</li>
+    <li id="two"class="blue">Verdura</li>
+    <li id="three"class="blue">Birra</li>
+    <li id="four"class="blue">Pizza</li>
+
+</ul>
+
+<h2>Cose da fare
+</h2>
+<ul>
+    <li id="one"class="red">Dentista</li>
+    <li id="two"class="red">Studiare</li>
+    <li id="three"class="red">Fare la spesa</li>
+    <li id="four"class="red">Cazzeggiare</li>
+
+</ul>
+
+<script>
+
+
+
+var ulEl = document.querySelector("ul");
+
+console.log(ulEl.firstElementChild);
+console.log(ulEl.firstChild);
+
+var itemDue = document.getElementById("two");
+var elText = itemDue.firstChild.nodeValue;
+elText = elText.replace("Studiare", "Programmare");
+itemDue.firstChild.nodeValue = elText;
+
+
+
+</script>
+
+</body>
+</html>

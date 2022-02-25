@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul>
+        <li id="one"class="red">Dentista</li>
+        <li id="two"class="red">Studiare</li>
+        <li id="three"class="red">Fare la spesa</li>
+        <li id="four"class="red">Cazzeggiare</li>
+    
+    </ul>
+
+    <script>
+        //creo Elemento
+        var nuovoEl = document.createElement('li');
+        //nuovo El.innerdHTML = "ciao"
+        console.log(nuovoEl);
+ 
+        //creo Nodo di testo da mettere nell'elemento
+        var nuovoTxt = document.createTextNode('Compilare CV');
+
+        //aggancio il testo al genitore
+        nuovoEl.appendChild(nuovoTxt)
+        console.log(nuovoEl);
+
+        //selezione il genitore del nuovo li
+        var genitoreUL = document.getElementsByTagName('ul')[0];
+
+        genitoreUL.appendChild(nuovoEl);
+
+        //elimino un elemento
+        var elDaRimuovere = document.getElementsByTagName('li')[1];
+        var contenitoreElem = document.getElementsByTagName('ul')[0];
+        
+        contenitoreElem.removeChild(elDaRimuovere);
+
+
+
+    </script>
+
+</body>
+</html>
